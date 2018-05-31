@@ -5,6 +5,7 @@ public class Stack_Queue_Function {
 	private static int count = 0;
 	private static int count1 = 0;
 	
+	// Method to add item to a stack
 	public void Additemtostack(int dataval){
 		if (head == null){
 			head = new Node(dataval);
@@ -19,6 +20,7 @@ public class Stack_Queue_Function {
 		}
 	}
 	
+	// Method to delete item from a stack
 	public int Removeitemfromstack(){
 		if (head == null){
 			System.out.println("Stack is empty");
@@ -30,6 +32,7 @@ public class Stack_Queue_Function {
 		return item;
 	}
 	
+	// Method to print items in a stack
 	public void Print_Elem_in_Stack(){
 		Node current = head;
 		System.out.print("Content of Stack: [");
@@ -41,18 +44,22 @@ public class Stack_Queue_Function {
 		System.out.println();
 	}
 	
+	// Method to increment count in a stack
 	public static void Incrementcount() {
 		count++;
 	}
 	
+	// Method to decrement count in a stack
 	public static void Decrementcount() {
 		count--;
 	}
 	
+	// Mehtod to obtain count in a stack
 	public int Getcount() {
 		return count;
 	}
 	
+	// Method to add item to a queue
 	public void Additemtoqueue(int dataval){
 		if (head1 == null){
 			head1 = new Node(dataval);
@@ -67,6 +74,7 @@ public class Stack_Queue_Function {
 		}
 	}
 	
+	// Method to remove item from a queue
 	public int Removeitemfromqueue(){
 		Node prev = null;
 		if (head1 == null){
@@ -86,6 +94,7 @@ public class Stack_Queue_Function {
 		return item;
 	}
 	
+	// Method to print items in a queue
 	public void Print_Elem_in_Queue(){
 		Node current = head1;
 		System.out.print("Content of Queue: [");
@@ -97,14 +106,17 @@ public class Stack_Queue_Function {
 		System.out.println();
 	}
 	
+	// Increment count in a queue 
 	public static void Incrementcount_Queue() {
 		count1++;
 	}
 	
+	// Decrement count in a queue
 	public static void Decrementcount_Queue() {
 		count1--;
 	}
 	
+	// Get count of the queue
 	public int Getcount_Queue() {
 		return count1;
 	}
