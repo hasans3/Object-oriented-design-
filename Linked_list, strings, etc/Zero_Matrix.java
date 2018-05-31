@@ -8,6 +8,7 @@ public class Zero_Matrix {
 		Zero_Matrix1.setzeros();
 	}
 
+	// Method to set all the rows and colums of a particular zero element in a matrix
 	void setzeros() {
 		int[][] mat = {
 				{1, 2, 3},
@@ -15,6 +16,7 @@ public class Zero_Matrix {
 				};
 		int[][] mat1 = new int[mat.length][mat[0].length];
 		int count = 0;
+		// creating a copy of matrix mat
 		for (int i = 0; i < mat.length; i++) {
 			for (int j = 0; j < mat[0].length; j++) {
 //				System.out.println("original matrix:" + mat[i][j]);
@@ -22,6 +24,8 @@ public class Zero_Matrix {
 				mat1[i][j] = mat[i][j];
 			}
 		}
+		
+		// Identifying the zero element in matrix mat and changing the rows and colums of the corresponding element in the copied matrix mat1
 		for (int i = 0; i < mat.length; i++) {
 			for (int j = 0; j < mat[0].length; j++) {
 				if (mat[i][j] == 0) {
@@ -44,6 +48,7 @@ public class Zero_Matrix {
 		}
 		System.out.println("Count:" + count);
 		System.out.println("Reduced Matrix:");
+		// Printing the modified matrix
 		for (int i = 0; i < mat1.length; i++) {
 			for (int j = 0; j < mat1[0].length; j++) {
 				System.out.print(mat1[i][j] + " ");
