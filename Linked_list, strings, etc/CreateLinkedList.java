@@ -1,16 +1,20 @@
 
+// Creating a class
 public class CreateLinkedList {
+	// Declaration of a new object of a class
 	public static MultiFunctionLinkedList n1;
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
+		// Initializing new object of a class
 		n1 = new MultiFunctionLinkedList();
+		// Adding nodes to the linked list
 		n1.addNode(0);
 		n1.addNode(1);
 		n1.addNode(2);
 		n1.addNode(1);
 		n1.addNode(0);
 //		n1.addNode(1);
+		
+		// Test cases to evaluate several methods defined in the MultiFunctionLinkedList class
 		int size = n1.Getcount();
 //		Object a = n1.head.data;
 //		Object b = n1.head.next.data;
