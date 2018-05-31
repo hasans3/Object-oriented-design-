@@ -2,11 +2,10 @@
 public class String_Compress {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		String a = String_Compression("aabcccccaaa");
 		System.out.println(a);
 	}
-	
+	// Method to return a compressed string
 	static String String_Compression(String S) {
 		String compressed_string = "";
 		int count = 0;
