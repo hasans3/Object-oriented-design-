@@ -5,7 +5,7 @@ public class Replace_Space_In_String {
 		String a = Insert_String("Hello World");
 		System.out.println(a);
 	}
-	// Method to remove the white spaces from a given string
+	// Method to replace white spaces in a given string
 	static String Insert_String(String str) {
 		char content; 
 		String new_content = ("");
