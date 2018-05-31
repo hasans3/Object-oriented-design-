@@ -1,6 +1,8 @@
 import java.util.HashSet;
 
+// Creating a Class
 public class MultiFunctionLinkedList {
+	// Defining the objects and variables
 	public static Node head1;
 	public static Node head2;
 	public Node head;
@@ -8,6 +10,7 @@ public class MultiFunctionLinkedList {
 	Node next;
 	private int i = 0;
 	
+	// Defining the method to add a node to the linked list
 	public void addNode(int data) {
 		if (head == null) {
 			head = new Node(data);
@@ -55,18 +58,22 @@ public class MultiFunctionLinkedList {
 		return head2;
 	}
 	
+	// Increment node counter method
 	public static void Incrementcount() {
 		count++;
 	}
 	
+	// Decrenment node counter method
 	public static void Decrementcount() {
 		count--;
 	}
 	
+	// Get the node count method
 	public int Getcount() {
 		return count;
 	}
 	
+	// Printing the content of linked list method
 	public void List() {
 		Node current = head;
 		System.out.print("Content of Linked List: [");
@@ -78,6 +85,7 @@ public class MultiFunctionLinkedList {
 		System.out.println();
 	}
 	
+	// Remove the node method
 	public void removeNode(int index) {
 		Node current = head;
 		i = 1;
@@ -89,6 +97,7 @@ public class MultiFunctionLinkedList {
 		Decrementcount();
 	}
 	
+	// Remove duplicate node method
 	public void removeDuplicate() {
 		HashSet<Object> set = new HashSet<Object>();
 		Node previous = null;
@@ -110,6 +119,7 @@ public class MultiFunctionLinkedList {
 		}
 	}
 	
+	// Get the element at the desired index method
 	public void GetElementAtK(int index) {
 		int i = 1;
 		Node current = head;
@@ -126,6 +136,7 @@ public class MultiFunctionLinkedList {
 		System.out.println("Element at kth index: " + current.data);
 	}
 	
+	// Method for partitioning linked list based on the a particular value 
 	public void Partition(int x) {
 		Node current = head;
 		Node lessthan = null;
@@ -152,6 +163,7 @@ public class MultiFunctionLinkedList {
 		System.out.println("Element of gthan: " + gthan.data + gthan.next.data + gthan.next.next.data);
 	}
 	
+	// Method to identify if the linked list is palindrome
 	public boolean Palindrome(){
 		Node new_head = null;
 		Node current = head;
