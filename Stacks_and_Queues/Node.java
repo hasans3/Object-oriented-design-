@@ -1,4 +1,4 @@
-
+// Creating a node class
 public class Node {
 	int data;
 	Node next;
